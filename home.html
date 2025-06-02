@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #ffe5ef;
+        }
+
+        h1 {
+            color: #bf1725;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 99;
+            font-size: 2em;
+            background: #bf1725;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+
+        #backToTopBtn:hover {
+            background: #c45a63;
+        }
+
+        .staff-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .staff-card {
+            background-color: #c45a63;
+            border: 1px solid #bf1725;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .staff-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .staff-card img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .staff-card h3 {
+            margin: 10px 0 5px;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .staff-card p {
+            margin: 5px 0;
+            color: #fff;
+            background-color: #bf1725;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .staff-card a {
+            display: inline-block;
+            margin-top: 7px;
+            padding: 5px 10px;
+            background-color: #c63a45;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border: 1.5px solid #650008;
+            text-align: center;
+        }
+
+        th {
+            background-color: #bf1725;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thông tin thành viên</h1>
+
+    <div class="staff-container">
+        <div class="staff-card">
+            <img src="09 - Nguyễn Thị Thùy Dung.jpg" alt="Thành viên 1">
+            <h3>Nguyễn Thị Thùy Dung</h3>
+            <p>Trưởng nhóm</p>
+            <a href="Ndung.html">Xem chi tiết</a>
+        </div>
+        <div class="staff-card">
+            <img src=" " alt="Thành viên 2">
+            <h3>Lê Phương Linh</h3>
+            <p>Thành viên</p>
+            <a href="Ndung.html">Xem chi tiết</a>
+        </div>
+        <div class="staff-card">
+            <img src=" " alt="Thành viên 3">
+            <h3>Phạm Thị Thu Trang</h3>
+            <p>Thành viên</p>
+            <a href="Ndung.html">Xem chi tiết</a>
+        </div>
+        <div class="staff-card">
+            <img src=" " alt="Thành viên 4">
+            <h3>Vũ Tú Uyên</h3>
+            <p>Thành viên</p>
+            <a href="Ndung.html">Xem chi tiết</a>
+        </div>
+        <div class="staff-card">
+            <img src=" " alt="Thành viên 5">
+            <h3>Nguyễn Thị Vân Anh</h3>
+            <p>Thành viên</p>
+            <a href="Ndung.html">Xem chi tiết</a>
+        </div>
+    </div>
+
+    <table>
+        <caption><strong>Bảng thông tin thành viên</strong></caption>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Lớp</th>
+                <th>Mã sinh viên</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <th>01</th>
+                <td>Nguyễn Thị Thùy Dung</td>
+                <td>CNTT & CĐS 65</td>
+                <td>11231825</td>
+            </tr>
+            <tr>
+                <th>02</th>
+                <td>Lê Phương Linh</td>
+                <td>CNTT & CĐS 65</td>
+                <td>11235723</td>
+            </tr>
+            <tr>
+                <th>03</th>
+                <td>Phạm Thị Thu Trang</td>
+                <td>CNTT & CĐS 66</td>
+                <td>11241842</td>
+            </tr>
+            <tr>
+                <th>04</th>
+                <td>Vũ Tú Uyên</td>
+                <td>CNTT & CĐS 66</td>
+                <td>11247243</td>
+            </tr>
+            <tr>
+                <th>05</th>
+                <td>Nguyễn Thị Vân Anh</td>
+                <td>ATTT 66</td>
+                <td>11244067</td>
+        </tbody>
+        <button onclick="scrollToTop()" id="backToTopBtn" title="Lên đầu trang">&#8679;</button>
+        <!-- Code injected by live-server -->
+        <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+</body>
+
+<script>
+    window.onscroll = function () {
+        document.getElementById("backToTopBtn").style.display =
+            (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+                ? "block" : "none";
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Thi Thuy Dung - Profile</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 99;
+            font-size: 2em;
+            background: #bf1725;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+
+        #backToTopBtn:hover {
+            background: #c45a63;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #ffe5ef;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .profile-header h4 {
+            color: #c45a63;
+            font-style: italic;
+            text-align: left;
+            margin: 0;
+            max-width: 350px;
+            font-size: 1.1em;
+        }
+
+        h1,
+        strong {
+            color: #bf1725;
+        }
+
+        p,
+        ul {
+            color: #d85858;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 1px solid #da4545;
+            object-fit: cover;
+            box-shadow: 0 0 10px #da4545, 0 0 20px #eac5c5;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-header">
+        <img src="09 - Nguyễn Thị Thùy Dung.jpg" alt="Nguyen Thi Thuy Dung">
+        <h4><i>"Cố gắng vì một tương lai về quê nuôi chó và trồng thêm hoa."</i></h4>
+    </div>
+
+    <h1>Thông tin cá nhân</h1>
+    <p><strong>Họ và tên:</strong> Nguyễn Thị Thúy Dung</p>
+    <p><strong>Ngày sinh:</strong> 28/06/2005</p>
+    <p><strong>Giới tính:</strong> Nữ</p>
+    <p><strong>Lớp:</strong> Công nghệ thông tin và Chuyển đổi số Chất lượng cao K65</p>
+    <p><strong>CLB:</strong> Đội sinh viên tình nguyện đồng hương Phú Thọ - PTNEU</p>
+    <p><strong>Quê quán:</strong> Vạn Xuân - Tam Nông - Phú Thọ </p>
+    <p><strong>Số điện thoại: </strong>0326857805 </p>
+    <p><strong>Email:</strong> nttdungk5@gmail.com</p>
+
+    <h1>Kỹ năng</h1>
+    <ul>
+        <li>Tiếng Anh: Giao tiếp cơ bản</li>
+        <li>Tin học văn phòng: Word, Excel, PowerPoint</li>
+        <li>Lập trình: C, C++, Python</li>
+        <li>Kỹ năng làm việc nhóm</li>
+        <li>Kỹ năng giao tiếp</li>
+        <li>Kỹ năng giải quyết vấn đề</li>
+        <li>Kỹ năng quản lý thời gian</li>
+        <li>Kỹ năng tổ chức và lập kế hoạch</li>
+        <li>Kỹ năng lãnh đạo</li>
+        <li>Kỹ năng phân tích và tổng hợp thông tin</li>
+        <li>Kỹ năng sáng tạo và đổi mới</li>
+        <li>Kỹ năng tự học và phát triển bản thân</li>
+    </ul>
+
+    <h1>Sở thích</h1>
+    <ul>
+        <li>Chơi thể thao (bóng rổ, cầu lông, bơi lội)</li>
+        <li>Du lịch</li>
+        <li>Nghe nhạc</li>
+        <li>Xem phim</li>
+        <li>Tham gia các hoạt động tình nguyện với <i>slogan "Em nghèo nhưng hay làm phước"</i> </li>
+    </ul>
+
+    <h1>Ước mơ</h1>
+    <p>Trở thành một lập trình viên giỏi, có thể phát triển các ứng dụng và phần mềm hữu ích cho cộng đồng.</p>
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Lên đầu trang">&#8679;</button>
+</body>
+
+<script>
+    window.onscroll = function () {
+        document.getElementById("backToTopBtn").style.display =
+            (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
+                ? "block" : "none";
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</html>

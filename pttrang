@@ -2,35 +2,102 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8">
-    <title>Phạm Thị Thu Trang</title>
+    <title>Giới thiệu bản thân - Phạm Thị Thu Trang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff8f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #b35c00;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #dba76d;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 8px 0;
+        }
+
+        a {
+            color: #b35c00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            color: #a24e00;
+            margin-top: 30px;
+            font-size: 20px;
+            border-bottom: 2px solid #dba76d;
+            padding-bottom: 5px;
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <h1>Phạm Thị Thu Trang</h1>
+        <img src="trang.jpg" alt="Ảnh cá nhân" class="profile-pic">
 
-<body> 
-    <h2 style="color: brown;">Thông tin cá nhân</h2>
-    <ul>
-        <li><b>Họ và tên:</b> Phạm Thị Thu Trang</li>
-        <li><b>Ngày sinh:</b> 30/11/2006</li>
-        <li><b>Học sinh lớp:</b> CNTT & CDS 66</li>
-        <li><b>Quê quán:</b> Ninh Bình</li>
-        <li><b>Email:</b> trangpt.mmd@gmail.com</li>
-    </ul>
-    
-    <h2 style="color: brown;">Kiến thức đã tích lũy:</h2>
-    <ul> 
-        <li>Cơ bản lập trình</li>
-    </ul>
+        <div class="section">
+            <div class="section-title">Thông tin cá nhân</div>
+            <ul>
+                <li><b>Ngày sinh:</b> 30/11/2006</li>
+                <li><b>Lớp:</b> CNTT & CDS 66</li>
+                <li><b>Quê quán:</b> Ninh Bình</li>
+                <li><b>Email:</b> trangpt.mmd@gmail.com</li>
+            </ul>
+        </div>
 
-    <h2 style="color: brown;">Sở thích:</h2>
-    <ul>
-        <li>Nghe nhạc</li>
-        <li>Ngủ</li>
-    </ul>
+        <div class="section">
+            <div class="section-title">Kiến thức đã tích lũy</div>
+            <ul>
+                <li>Cơ bản lập trình</li>
+                <li>Giao tiếp cơ bản</li>
+            </ul>
+        </div>
 
-    <h2 style="color: brown;">Liên hệ</h2>
-    <ul>
-        <li><b>Facebook:</b> <a href="https://www.facebook.com/pt.trang.201160" target="_blank">Trang cá nhân</a></li>
-    </ul>
+        <div class="section">
+            <div class="section-title">Sở thích</div>
+            <ul>
+                <li>Nghe nhạc</li>
+                <li>Ngủ</li>
+            </ul>
+        </div>
 
-    <img src="trang.jpg" alt="ẢNH CÁ NHÂN" width="200">
+        <div class="section">
+            <div class="section-title">Liên hệ</div>
+            <ul>
+                <li><b>Facebook:</b> <a href="https://www.facebook.com/pt.trang.201160" target="_blank">Trang cá nhân</a></li>
+        </div>
+    </div>
 </body>
 </html>

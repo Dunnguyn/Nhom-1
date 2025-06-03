@@ -32,6 +32,28 @@
             background: #c45a63;
         }
 
+        #backToHomeBtn {
+            display: block;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 99;
+            font-size: 1.5em;
+            background: #bf1725;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+
+        #backToHomeBtn:hover {
+            background: #c45a63;
+        }
+
         body {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             line-height: 1.6;
@@ -160,6 +182,9 @@
     <p>Trở thành một lập trình viên giỏi, có thể phát triển các ứng dụng và phần mềm hữu ích cho cộng đồng.</p><br><br>
 
     <button onclick="scrollToTop()" id="backToTopBtn" title="Lên đầu trang">&#8679;</button>
+
+    <button onclick="goHome()" id="backToHomeBtn" title="Về trang chủ">🏩</button>
+
 </body>
 
 <script>
@@ -171,6 +196,10 @@
 
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function goHome() {
+        window.location.href = "home.html";
     }
 </script>
 
